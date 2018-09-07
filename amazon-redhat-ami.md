@@ -36,7 +36,8 @@ sudo chown jenkins:jenkins -R jenkins_home
 
 sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
 sudo iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8080
-
+sudo service iptables save
+sudo chkconfig iptables on
 ```
 
 #### What does this package do? ####
