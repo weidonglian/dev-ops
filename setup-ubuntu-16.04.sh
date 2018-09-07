@@ -2,6 +2,12 @@
 sudo apt update
 sudo apt upgrade
 
+# Git
+sudo apt-get install -y git
+
+# JRE
+sudo apt-get install -y default-jre
+
 # Docker CE
 sudo apt update
 sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
