@@ -24,3 +24,14 @@ sudo apt install docker.io
 ```sh
 sudo usermod -a -G docker $USER
 ```
+
+### AWS Create a volume ###
+Create a volume in EC2's volume and then attach it to an ec2 instance.
+ssh into your ec2 instance:
+```
+sudo file -s /dev/xvdf
+sudo mkfs -t xfs /dev/xvdf
+sudo file -s /dev/xvdf
+sudo mkdir /postgres
+sudo mount /dev/xvdf /postgres
+```
